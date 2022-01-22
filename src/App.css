@@ -15,11 +15,10 @@ body {
 
 header {
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
-  padding: 30px 100px;
+  padding: 2rem 8rem;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
@@ -33,26 +32,30 @@ header .logo {
   letter-spacing: 2px;
 }
 
-header ul {
+.nav-menu {
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
-header ul li {
+.nav-item {
   list-style: none;
-  margin-left: 20px;
+  margin-left: 2rem;
 }
 
-header ul li a {
+.nav-link {
   text-decoration: none;
   padding: 6px 15px;
   color: white;
   border-radius: 20px;
+  z-index: 1000;
 }
 
-header ul li a:hover,
-header ul li a.active {
+/* TODO: fix this */
+.nav-link:hover {
+  background: white;
+  color: #2b1055;
+}
+.nav-link.active {
   background: white;
   color: #2b1055;
 }
@@ -82,28 +85,20 @@ section img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* pointer-events: none; */
+  pointer-events: none;
 }
 
 section img #moon {
   mix-blend-mode: screen;
 }
-/* 
-section img #stars {
-  mix-blend-mode: screen;
-} */
 
 section img #mountains_front {
   z-index: 10;
 }
-/* 
-section img #mountains_behind {
-  mix-blend-mode: screen;
-} */
 
 #text {
   position: absolute;
-  right: -350px;
+  right: 350px;
   color: white;
   white-space: nowrap;
   font-size: 7.5vw;
