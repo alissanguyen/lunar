@@ -4,10 +4,12 @@
   display: flex;
   align-items: center;
   z-index: 1000;
+  list-style: none;
 }
 
 .nav-item {
   margin-left: 3rem;
+  list-style: none;
 }
 
 .nav-link {
