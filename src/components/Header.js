@@ -1,30 +1,35 @@
 const Header = () => {
+  const links = [
+    {
+      name: "home",
+      id: "home",
+    },
+    {
+      name: "about",
+      id: "about",
+    },
+    {
+      name: "work",
+      id: "work",
+    },
+    {
+      name: "contact",
+      id: "contact",
+    },
+  ];
   return (
     <header>
       <a href="/" className="logo">
         Lunar
       </a>
       <ul className="nav-menu">
-        <li className="nav-item">
-          <a href="/" className="active nav-link">
-            Home
-          </a>
-        </li>
-        <li className="nav-item">
-          <a href="/" className="nav-link">
-            About
-          </a>
-        </li>
-        <li className="nav-item">
-          <a href="/" className="nav-link">
-            Work
-          </a>
-        </li>
-        <li className="nav-item">
-          <a href="/" className="nav-link">
-            Contact
-          </a>
-        </li>
+        {links.map((link) => (
+          <li className="nav-item">
+            <a href="/" className="nav-link">
+              {link.name}
+            </a>
+          </li>
+        ))}
       </ul>
     </header>
   );
