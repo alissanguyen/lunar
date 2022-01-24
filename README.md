@@ -1,5 +1,6 @@
 # Lunar
 URL https://lunar.alissanguyen.dev
+
 A responsive landing page with parallax scrolling effect.
 
 ## What's Special about Lunar?
